@@ -1,0 +1,114 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <script src="../jquery/jquery.min.js"></script>
+    <link rel="stylesheet" href="../css/dist/index.min.css">
+    <link rel="stylesheet" href="../css/font_4q5amfadhp/iconfont.css">
+    <script src="../js/index.js"></script>
+    <script src="../js/cookie.js"></script>
+    <script src="../js/shop.js"></script>
+    <script src="../js/ajax.js"></script>
+</head>
+<body>
+    <div id="logo">
+        <div class="logo common">
+            <a href="" class="logo_left"></a>
+            <div class="logo_cz">
+                <a href="./logo.html">注册</a>
+                <p>|</p>
+                <a href="./logo.html">登陆</a>
+            </div>
+            <div class="box">
+                <input class="logo_ss" placeholder="请输入您要搜索的商品或店铺">
+                <a href="" class="fdj"></a>
+            </div>
+        </div>
+    </div>
+    <div id="nav">
+        <div class="nav common">
+            <ul>
+                <li><a href="../index.html">首页</a></li>
+                <li> <a href="./product.html" >萌物库</a> </li>
+                <li><a href="./shop.html"  class="active">品牌馆</a></li>
+                <li><a href="">同胞社区</a></li>
+            </ul>
+            <a href="" class="nav_r">
+                <img src="../images/dprz.png" alt="">
+                <p>店铺入驻</p>
+            </a>
+        </div>
+    </div>
+    <div id="m_head">
+        <div class="m_head common">
+            <p>热门品牌</p>
+        </div>
+    </div>
+    
+    <div id="comtent">
+        <!-- <div class="info common">
+            <ul class="first_three">
+                <li>
+                    <div class="sjtx">
+                        <a href="">
+                            <img src="" alt="">
+                        </a>
+                        <a href="" class="f">空谷记</a>
+                        <span>商品：
+                            <i>36</i>
+                        </span>
+                    </div>
+                    <div class="shop_list">
+                        <span>
+                            <a href="">
+                                <img src="" alt="">
+                            </a>
+                            <p class="buy">￥75</p>
+                            <p class="pname"><a href="">
+                                空谷记 云升乐歌 明制立领对襟织金短袄织金马面裙白菜瑕疵处理
+                            </a></p>
+                        </span>
+                    </div>
+                </li>
+            </ul>
+        </div> -->
+        
+    </div>
+    <div style="height: 80px;width: 100%;background-color: #EDEDEF;">
+    </div>
+    <div id="foot">
+        <div class="foot">
+            <ul>
+                <li><a href="">关于我们</a> <i>|</i> </li>
+                <li><a href="">商家入驻</a><i>|</i></li>
+                <li><a href="">入驻协议</a><i>|</i></li>
+                <li><a href="">新手指南</a><i>|</i></li>
+                <li><a href="">商务合作</a><i>|</i></li>
+                <li><a href="">汉服荟</a></li>
+            </ul>
+            <p><a href="" class="tb"></a> CopyRight ©2018 深圳市汉服荟网络科技有限公司 版权所有 <a href="">粤ICP备14046913号-1</a>
+                电话：0755-21503399
+            </p>
+        </div>
+    </div>
+    <span class="iconfont icon-huidaodingbu reg_top"></span>
+    <script>
+        let t = document.documentElement.clientHeight;
+        $(document).scroll(function () {
+            let rtop = $(document).scrollTop();
+            if (rtop >= t) {
+                $('.reg_top').fadeIn();
+            }
+            if (rtop <= t) {
+                $('.reg_top').fadeOut();
+            }
+        })
+        $('.reg_top').click(function () {
+            $(document).scrollTop(0)
+        })
+    </script>
+</body>
+</html>

@@ -1,0 +1,351 @@
+* {
+    margin: 0;
+    padding: 0;
+    list-style: none;
+    text-decoration: none;
+    box-sizing: border-box;
+}
+
+html,
+body {
+    height: 100%;
+}
+
+.bg_img {
+    width: 100%;
+    height: 100%;
+    background-image: url(../../images/bg_img.jpg);
+    background-position: center;
+    background-size: cover;
+
+    img {
+        position: absolute;
+        top: 80px;
+        left: 10%;
+    }
+
+    .login_form {
+        width: 360px;
+        height: 380px;
+        border-radius: 4px;
+        background-color: #fff;
+        position: absolute;
+        right: 15%;
+        top: 150px;
+        z-index: 1000;
+
+        .login_head {
+            width: 100%;
+            height: 60px;
+            border-bottom: 1px solid #ddd;
+            font-size: 22px;
+            text-align: center;
+            line-height: 60px;
+            color: #555555;
+        }
+
+        .form {
+            padding: 30px 40px;
+
+            .user_zc {
+                margin-top: 40px;
+
+                button {
+                    width: 280px;
+                    height: 40px;
+                    padding: 0 16px;
+                    background-color: #ff6699;
+                    color: #fff;
+                    white-space: nowrap;
+                    text-align: center;
+                    border: none;
+                    border-radius: 2px;
+                    cursor: pointer;
+                    outline: none;
+                }
+            }
+
+            .form_item {
+                position: relative;
+                margin-bottom: 14px;
+
+                input {
+                    width: 280px;
+                    height: 40px;
+                    border: 1px solid #ddd;
+                    outline: none;
+                }
+
+                .username {
+                    text-indent: 50px;
+                }
+
+                .pwd,
+                .tel,
+                .yzm,
+                .zc_pwd {
+                    text-indent: 10px;
+                }
+
+                .yzm,
+                button {
+                    width: 133px;
+                    height: 40px;
+                }
+
+                button {
+                    margin-left: 14px;
+                    border: 1px solid #C9C9C9;
+                    background-color: #fff;
+                    color: #555;
+                }
+
+                button:hover {
+                    background: #eeeeee;
+                    color: #333;
+                }
+
+                span {
+                    display: block;
+                    width: 50px;
+                    height: 40px;
+                    text-align: center;
+                    line-height: 40px;
+                    position: absolute;
+                    top: 0;
+                    left: 0;
+                    color: #ff6699;
+                }
+
+            }
+
+            .form_flex {
+                display: flex;
+            }
+
+            .form_item_c {
+                height: 15px;
+                line-height: 30px;
+                margin-bottom: 10px;
+
+                div {
+                    float: left;
+
+                    a {
+                        font-size: 14px;
+                        color: #555;
+                    }
+                }
+
+                .wz {
+                    float: right;
+                    margin-left: 20px;
+
+                    a {
+                        color: #5678A0;
+                    }
+
+                    a:nth-child(1) {
+                        margin-right: 15px;
+                    }
+
+                    a:hover {
+                        color: #ff6699;
+                    }
+                }
+
+                p {
+                    display: inline-block;
+                    font-size: 14px;
+                    color: #555;
+
+                    a {
+                        color: #5678A0;
+                        margin-left: 5px;
+                    }
+
+                    a:hover {
+                        color: #ff6699;
+                    }
+                }
+            }
+
+            .form_btn {
+                height: 40px;
+
+                button {
+                    width: 133px;
+                    height: 40px;
+                    float: left;
+                    text-align: center;
+                    line-height: 40px;
+                    border-radius: 2px;
+                    border: none;
+                    outline: none;
+                    cursor: pointer;
+                }
+
+                .btn_login {
+                    background-color: #ff6699;
+                    color: #fff;
+                }
+
+                .btn_login:hover {
+                    background-color: #FF85AD;
+                }
+
+                .btn_zc {
+                    margin-left: 14px;
+                    color: #555;
+                    background-color: #fff;
+                    border: 1px solid #C9C9C9;
+                    
+                }
+
+                .btn_zc:hover {
+                    background-color: #F1F1F1;
+
+                }
+
+
+            }
+
+            .login_thrid {
+                width: 280px;
+                height: 54px;
+                margin-top: 30px;
+                display: flex;
+                justify-content: space-evenly;
+
+                a {
+                    display: block;
+                    width: 50px;
+                    height: 50px;
+
+                }
+
+                a:nth-child(1) {
+                    background: url(../../images/login_thrid.png) no-repeat;
+                }
+
+                a:nth-child(1):hover {
+                    background: url(../../images/login_thrid.png) no-repeat 0 -50px;
+                }
+
+                a:nth-child(2) {
+                    background: url(../../images/login_thrid.png) no-repeat -50px 0;
+                }
+
+                a:nth-child(2):hover {
+                    background: url(../../images/login_thrid.png) no-repeat -50px -50px;
+                }
+
+                a:nth-child(3) {
+                    background: url(../../images/login_thrid.png) no-repeat -100px 0;
+                }
+
+                a:nth-child(3):hover {
+                    background: url(../../images/login_thrid.png) no-repeat -100px -50px;
+                }
+            }
+            
+        }
+    }
+}
+
+.bg_foot {
+    width: 100%;
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    text-align: center;
+    font-size: 14px;
+
+    .foot_nav {
+        height: 20px;
+        text-align: center;
+
+        p {
+            display: inline;
+            color: #fff;
+
+            a {
+                color: #fff;
+                margin: 2px 16px;
+            }
+
+            a:hover {
+                color: #ff6699;
+            }
+        }
+    }
+
+    .copyr {
+        margin-bottom: 60px;
+        color: #fff;
+
+        a {
+            color: #fff;
+            margin-left: 20px;
+            display: inline-block;
+        }
+
+        a:hover {
+            color: #ff6699;
+        }
+    }
+}
+
+.dialog {
+    width: 100%;
+    height: 100%;
+    background-color: #000;
+    opacity: .3;
+    position: fixed;
+    top: 0;
+    left: 0;
+    display: none;
+}
+
+.tishi,.tishi_zc,.tishi_cf,.tishi_pd,.tishi_loginpd{
+    width: 230px;
+    height: 157px;
+    background-color: #fff;
+    border-radius: 2px;
+    box-shadow: 1px 1px 50px rgb(0 0 0 / 30%);
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    margin: auto;
+    display: none;
+    z-index: 10000;
+    .head {
+        padding: 0 80px 0 20px;
+        height: 42px;
+        line-height: 42px;
+        border-bottom: 1px solid #eee;
+        font-size: 14px;
+        color: #333;
+        background-color: #F8F8F8;
+        font-weight: bold;
+    }
+    >p {
+        color: #555555;
+        font-size: 14px;
+        margin: 20px;
+    }
+
+    button {
+        width: 60px;
+        height: 30px;
+        padding: 0 16px;
+        background-color: #ff6699;
+        color: #fff;
+        text-align: center;
+        border: none;
+        border-radius: 2px;
+        margin-left: 85px;
+    }
+}
